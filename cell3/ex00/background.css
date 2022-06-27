@@ -1,0 +1,68 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Tahoma, sans-serif
+}
+
+:root
+{
+	--color: #303134;
+	--color_nb: #cad2db;
+	--box_shadow: 5px 5px 5px 0 rgb(32,33,36,1),
+				  -1px -1px 4px rgb(32,33,36,1); 
+}
+
+body
+{
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background-color: var(--color);
+}
+
+.container
+{
+	width: 30%;
+	max-width: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 5px 5px 5px 0 rgb(32,33,36,1),
+				-1px -1px 3px rgb(32,33,36,1);
+	border-radius: 1rem;
+	text-align: center;
+	color: var(--color_nb);
+	padding: 1rem;
+	background-color: var(--color);
+
+
+}
+
+.color_hex,
+.botonsitos * 
+{
+	background-color: var(--color);
+	box-shadow: var(--box_shadow);
+	border-radius: .5rem;
+	padding: .5rem 1rem;
+}
+
+.color_hex
+{
+	font-weight: 600;
+	letter-spacing: 3px;
+	font-size: 1.5rem;
+	margin: 2rem 0 2rem 0;
+}
+
+.botonsitos *
+{
+	outline: none;
+	border: none;
+	color: var(--color_nb);
+	cursor: pointer;
+	margin: 0 5px;
+}

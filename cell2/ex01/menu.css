@@ -1,0 +1,54 @@
+*{
+  font-family: Arial;
+}
+
+ul{
+  display: none;
+}
+
+input:checked  ~ ul{
+  display: block;
+}
+
+input {
+  display: none;
+}
+
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+label:hover{
+  background: grey;
+}
+
+ul
+{
+  margin-top:0;
+  padding: 0;
+  width: 200px;
+
+}
+
+li 
+{
+  display: block;
+  background: lightgrey;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+}
+
+li:hover {
+  filter: brightness(110%);
+}
